@@ -1,0 +1,36 @@
+{
+  "name": "example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "generate:relay": "relay-compiler"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "heroicons": "^2.0.18",
+    "next": "^13.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-relay": "^14.1.0",
+    "relay-nextjs": "^2.0.0-rc.0",
+    "relay-runtime": "^14.1.0",
+    "swr": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@types/react-relay": "^14.1.2",
+    "@types/relay-runtime": "^14.1.4",
+    "autoprefixer": "^10.2.5",
+    "graphql": "^15.5.0",
+    "postcss": "^8.2.9",
+    "relay-compiler": "^14.1.0",
+    "tailwindcss": "^2.1.1",
+    "typescript": "^4.9.3"
+  }
+}
