@@ -26,7 +26,9 @@ const FilmListQuery = graphql`
 function Rest({ preloadedQuery }: RelayProps<{}, pages_listFilmsQuery>) {
   const query = usePreloadedQuery(FilmListQuery, preloadedQuery);
   if (query.allFilms == null || query.allFilms.films == null) return null;
-
+  const fetcher = (...args) => fetch(...args).then(res => res.json())
+  const { data, error, isLoading } = useSWR('http://localhost:8000/Product/', fetcher)
+  console.log('data', data, error)
   const user = {
 
 

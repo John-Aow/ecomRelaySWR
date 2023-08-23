@@ -19,6 +19,6 @@
     "target": "es5",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/hooks/use-product.js"],
   "exclude": ["node_modules"]
 }
